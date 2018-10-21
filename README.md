@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Bootstrap Layout
+
+<div class="container content"> <!-- container centers content on large screens -->
+  <div class="row">             <!-- responsive row has 12 columns by default -->
+    <div class="col-md-6">      <!-- uses 6 columns on medium and larger screens... -->
+      <div style="text-align:center">
+        <h1>
+          {{ title }}
+        </h1>
+      </div>     
+    </div>
+    <div class="col-md-6">      <!-- uses 12 columns on smaller than medium screens -->
+      <div style="text-align:center">
+        <h1>
+          {{ title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
